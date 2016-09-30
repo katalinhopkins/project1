@@ -1,0 +1,79 @@
+<script type="text/javascript" src="/javacript/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="/javacript/jquery.SPServices-2013.01.min.js"></script>
+
+<script type="text/javascript" src="/javacript/VisitorCount/VisitorCount.js"></script>
+
+<style type="text/css">
+
+#visitorCountDiv{
+	left: 50px;
+	padding: 1.0em;
+	width: 180px;
+	border: 1px solid #aed0ea;
+	font-size:16px;
+	box-shadow: -7px -7px 7px #000000;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	background: #f2f5f7 url("/javacript/VisitorCount/ui-bg_highlight-hard_100_f2f5f7_1x100.png") repeat-x scroll 50% top;
+	color: #362b36;
+}
+#visitorCountSpan{
+/*border:solid 1px red;*/
+	font-weight: bold; 
+	font-size: large;
+}
+#lastVisitedQuote, #createdOnQuote{
+/*border:solid 1px aqua;*/
+
+	font-size:11px;
+margin:0px;
+font-style:italic;
+}
+	
+	.quoteSpan{
+/*	display:inline-block;
+	font-size:11px;
+	margin:0px;
+	font-style:italic;
+	*/
+	width:30%;
+	/*border:solid 1px green;
+		margin-right:7px;*/
+		padding:5px;
+	}
+
+#lastVisitedDate{
+width:30%;
+	/*border:solid 1px navy;
+	width:25px;*/
+}
+#createdOnQuote{
+/*	border:solid 1px green;*/
+}
+	
+
+</style>
+
+<div id="debugDiv" style="display:none; width:65%;  border:solid 1px #24E3D6"></div>
+<div id="WSOutput" style="display:none; border:solid 1px purple;margin-bottom:40px; "></div>
+   
+<div id="visitorCountDiv">
+Total Visitor Count: 
+<span id="visitorCountSpan"></span>
+
+<blockquote id="lastVisitedQuote">
+<span class="quoteSpan">Last Visited on:</span>
+<span id="lastVisitedDate">2016-01-01</span>
+<a href="#" id="createdInfo" style="/*border:solid 1px red;*/" >
+	<img src="/javacript/VisitorCount/get_info.png" height="20" width="20">
+</a>
+</blockquote>
+
+<blockquote id="createdOnQuote" style="display:none">
+<span class="quoteSpan">Counter Created on:</span>
+<span id="createdDate"></span>
+</blockquote>
+</div>
